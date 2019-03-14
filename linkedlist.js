@@ -29,7 +29,7 @@ class Node {
       this.tail = newNode;
       this.length++;
       return this;
-    }
+    }//O(1)
     //prepend() Add (1)-->10-->5-->16 ->null
     prepend(value){
       //1.create the node
@@ -44,12 +44,10 @@ class Node {
       this.length++;
       return this;
     }
-  }
+  } //O(1)
   
   //out put Undefined
   const myLinkedList = new LinkedList(10);
-  
-  
   //command
   myLinkedList.append(5);
   myLinkedList.append(16);
